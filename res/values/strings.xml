@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dribbble</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_open_in_browser">Open in Browser</string>
+    <string name="action_share">Share</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_unfavorite">Unfavorite</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="action_about">About</string>
+    <string name="loading">Loading</string>
+    <string name="debuts">debuts</string>
+    <string name="everyone">everyone</string>
+    <string name="popular">popular</string>
+    <string name="favorite">favorite</string>
+    <string name="title_activity_shot">MainActivity</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    
+    <string name="pull_to_refresh">Pull to refresh...</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="refreshing">loading…</string>
+    
+    <string name="tip_save_success">Saved successfully</string>
+    <string name="tip_save_failed">Save failed</string>
+    <string name="tip_delete_success">Deleted successfully</string>
+    <string name="tip_delete_failed">Delete failed</string>
+    
+    <string name="tip_press_again_to_exit">Press BACK again to exit</string>
+    <string name="tip_no_network">Please check your network connection</string>
+
+</resources>

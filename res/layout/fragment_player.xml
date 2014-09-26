@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/yz.android.tribbble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yz.android.tribbble.PlayerActivity$PlaceholderFragment" >
+
+    <yz.android.dribbble.ui.custome.CircleImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="center"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAvatar"
+        android:layout_centerHorizontal="true"
+        android:text="Barry Zhang"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_whilte" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_centerHorizontal="true"
+        android:text="China"
+        android:textColor="@color/text_whilte" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textViewLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/textViewFollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/line1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Followers\n4"
+            android:textColor="@color/text_whilte" />
+
+        <TextView
+            android:id="@+id/textViewFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewFollower"
+            android:layout_toRightOf="@+id/line1"
+            android:gravity="center"
+            android:text="Following\n6"
+            android:textColor="@color/text_whilte" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewFollower"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:id="@+id/textViewShots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textViewFollower"
+            android:layout_below="@+id/line2"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Shots\n4"
+            android:textColor="@color/text_whilte" />
+
+        <TextView
+            android:id="@+id/textViewLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewShots"
+            android:layout_alignBottom="@+id/textViewShots"
+            android:layout_alignLeft="@+id/textViewFollowing"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line2"
+            android:gravity="center"
+            android:text="Likes\n6"
+            android:textColor="@color/text_whilte" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewShots"
+            android:layout_marginBottom="20dp"
+            android:background="#bbbbbb" />
+
+        <TextView
+            android:id="@+id/textViewWebUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewUserComputer"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageViewUserComputer"
+            android:layout_below="@+id/line3"
+            android:layout_toRightOf="@+id/imageViewUserComputer"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="http://wwww.barryzhang.com"
+            android:textColor="@color/text_whilte" />
+
+        <ImageView
+            android:id="@+id/imageViewUserComputer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/user_computer" />
+
+        <TextView
+            android:id="@+id/textViewUseTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewUserTwitter"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageViewUserTwitter"
+            android:layout_toRightOf="@+id/imageViewUserComputer"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="Twitter"
+            android:textColor="@color/text_whilte" />
+
+        <ImageView
+            android:id="@+id/imageViewUserTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewUserComputer"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/textViewUseTwitter"
+            android:src="@drawable/user_twitter" />
+
+        <ImageView
+            android:id="@+id/imageViewUserDribbble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageViewUserTwitter"
+            android:layout_below="@+id/imageViewUserTwitter"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/user_dribble" />
+
+        <TextView
+            android:id="@+id/textViewUseDribbble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewUserDribbble"
+            android:layout_alignLeft="@+id/textViewUseTwitter"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageViewUserDribbble"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="http://dribbble.com/barry"
+            android:textColor="@color/text_whilte" />
+    </RelativeLayout>
+
+</RelativeLayout>

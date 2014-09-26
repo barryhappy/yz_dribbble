@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+	<color name="main_tab_title_text_color">#ffffff</color>
+	
+	<color name="text_whilte">#ffffff</color>
+</resources>

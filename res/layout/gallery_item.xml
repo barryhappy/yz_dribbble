@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8" >
+
+    <ImageView
+        android:id="@+id/imageViewGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:background="#ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/loading" />
+
+    <yz.android.dribbble.ui.custome.CircleImageView
+        android:id="@+id/imageViewPlayer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageViewGallery"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/relative_layout_2"
+        android:src="@drawable/logo58" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignTop="@+id/imageViewPlayer"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/relative_layout_2"
+        android:layout_toRightOf="@+id/imageViewPlayer"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="Monograma M" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewPlayer"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imageViewPlayer"
+        android:text="by "
+        android:textColor="#0000ff" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewPlayerUsername"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageViewGallery"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:src="@drawable/favorite_comment" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textViewCommentsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewPlayerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/textViewTitle"
+        android:layout_toRightOf="@+id/textView3"
+        android:lines="1"
+        android:text="Sublime Estudio"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

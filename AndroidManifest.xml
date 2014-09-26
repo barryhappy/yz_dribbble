@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yz.android.dribbble"
+    android:versionCode="1"
+    android:versionName="v1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name="yz.android.dribbble.application.YZApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="yz.android.dribbble.ui.LoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yz.android.dribbble.ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="yz.android.dribbble.ui.ShotActivity"
+            android:label="@string/title_activity_shot" >
+<!--             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="yz.android.dribbble.ui.MainActivity" /> -->
+        </activity>
+        <activity
+            android:name="yz.android.dribbble.ui.PlayerActivity">
+<!--             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="yz.android.dribbble.ui.ShotActivity" /> -->
+        </activity>
+    </application>
+
+</manifest>
